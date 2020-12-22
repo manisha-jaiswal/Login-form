@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+			<img src="fb.png">
+			<img src="g.png">
+		</div>
+		<form id="login" class="input-grp">
+			<center><input type="text" class="input-field" placeholder="phone number or gmail id " required/><br><br><br><br><br>
+			<button type="submit" class="submit-btn">LOGIN USING OTP</button></center>
+		</form>
+		<form id="register" class="input-grp">
+			<center><input type="text" class="input-field" placeholder="phone number or gmail id " required/><br><br><br><br><br>
+			<button type="submit" class="submit-btn">SIGN UP USING OTP</button></center>
+		</form>
+	</div>
+
+	</div>
+	<script type="text/javascript">
+		var x=document.getElementById("login");
+		var y=document.getElementById("register");
+		var z=document.getElementById("btn");
+
+		function register()
+		{
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login()
+		{
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+	</script>
+</body>
+</html>
